@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Inclusion_Financiera-V2_publicacion</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Inclusion_financiera_1-3_v3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7493,15 +7493,15 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Inclusi%C3%B3n-financiera-en-Colombia"><span style="color: blue;">Inclusión financiera en Colombia</span><a class="anchor-link" href="#Inclusi%C3%B3n-financiera-en-Colombia">¶</a></h1><p><strong>Autora:</strong> María José Rodríguez Villarreal</p>
-<p>En este notebook vamos a realizar un análisis al estado de la inclusión financiera en Colombia en términos de acceso y uso de productos y servicios financieros por parte de los colombianos, enfocándonos específicamente en el acceso a cuentas de ahorro, depósitos de bajo monto y el acceso al crédito en el país. Los datos empleados para este análisis han sido tomados de la página de datos abiertos colombiana, <strong>datos.gov.co</strong>, a partir del archivo "Inclusión Financiera" el cual nos proporciona información sobre el uso de productos financieros y cobertura, incluyendo la desagregación por género en la tenencia de los diferentes productos financieros.</p>
-<p>Este conjunto de datos contiene un total de 1.2M de filas y 99 columnas, pero para efectos prácticos en este proyecto vamos a reducir el conjunto de datos recolectados a un total de 500k filas y 99 atributos, los cuales posteriormente serán filtrados o seleccionados de acuerdo con el objetivo del análisis a realizar.</p>
+<h1 id="Inclusi%C3%B3n-financiera-en-Colombia---1/3"><span style="color: blue;">Inclusión financiera en Colombia - 1/3</span><a class="anchor-link" href="#Inclusi%C3%B3n-financiera-en-Colombia---1/3">¶</a></h1><p><strong>Autora:</strong> María José Rodríguez Villarreal</p>
+<p>En este proyecto vamos a realizar un análisis al estado de la inclusión financiera en Colombia en términos de acceso y uso de productos y servicios financieros por parte de los colombianos, enfocándonos específicamente en el acceso a cuentas de ahorro, depósitos de bajo monto y el acceso al crédito en el país. Los datos empleados para este análisis han sido tomados de la página de datos abiertos colombiana, <strong>datos.gov.co</strong>, a partir del archivo "Inclusión Financiera" el cual nos proporciona información sobre el uso de productos financieros y cobertura, incluyendo la desagregación por género en la tenencia de los diferentes productos financieros.</p>
+<p>El conjunto de datos total de la plataforma contiene un total de 1.2M de filas y 99 columnas, pero a través de una consulta en la página datos.gov.co se han recolectado solo los registros asociados a cuentas de ahorro, créditos y productos a nivel nacional registrados en las entidades bancarias para el año 2024, partiendo así el proyecto con un conjutno de datos de menor volumen con un total de 52.7k registros y 99 atributos, los cuales posteriormente serán filtrados o seleccionados de acuerdo con el servio o producto financiero objetivo del análisis a realizar.</p>
 <h3 id="Objetivos">Objetivos<a class="anchor-link" href="#Objetivos">¶</a></h3><p>El objetivo principal de este proyecto es realizar un análisis al estado general de la inclusión financiera en Colombia en términos de acceso a cuentas de ahorro, depósitos de bajo monto y a créditos financieros considerando una segmentación basada en género. De manera específica lograremos:</p>
 <ol>
 <li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Identificar y preparar el conjunto de datos relevantes para cada uno de los productos o servicios a analizar.</li>
 <li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Validar la calidad de los datos para el análisis de interés y mejorar dicha calidad en caso de ser necesario.</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Describir los datos mediante estadistítica descriptiva y distribuciones con el fin de analizar grupos de atributos e identificar posibles relaciones entre variables.</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Responder preguntas acerca del estado de la inclusión financiera en Colombia a partir de los datos en el año 2022.</li>
+<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Describir los datos mediante estadistítica descriptiva y distribuciones con el fin de analizar grupos de atributos e identificar posibles relaciones entre variables.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Responder preguntas acerca del estado de la inclusión financiera en Colombia en el año 2024.</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Transformar la información proporcionada por el conjunto de datos en representaciones visuales a través de la visualización de datos en Python con el objetivo de analizar la información y comunicar de manera más efectivas las conclusiones obtenidas.</li>
 </ol>
 <h3 id="Conocimientos-aplicados">Conocimientos aplicados<a class="anchor-link" href="#Conocimientos-aplicados">¶</a></h3><ol>
@@ -7511,6 +7511,7 @@ a.anchor-link {
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Análisis exploratorio de datos.</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"/>Visualización de datos con Python.</li>
 </ol>
+<p><strong>El proyecto de inslusión financiera se compone de un conjunto de 3 notebooks en dónde se analiza la inclusión financiera de los combianos en términos del acceso a cuentas de ahorro, créditos y depósitos de bajo monto, en dónde cada uno de los tres servicios o productos analizados se desarrollo en un notebook diferente. Este corresponde al notebook # 1</strong>.</p>
 </div>
 </div>
 </div>
@@ -7525,12 +7526,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d2f8251a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d2f8251a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Habilitamos los comandos de SQL magic.</span>
@@ -7540,12 +7541,26 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8d740771">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The sql extension is already loaded. To reload it, use:
+  %reload_ext sql
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=68ef10ac">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Importamos las liberías necesarias para realizar el análisis de interés.</span>
@@ -7560,7 +7575,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Importamos las liberías necesarias para realizar el análisis de interés.</span>
@@ -7572,31 +7587,16 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=da1a86a7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=da1a86a7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">sql</span> sqlite:///Inclusion_Financiera.db #establecemos conexión con la base  de datos SQLite.
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">sql</span> sqlite:///Inclusion_Financiera.db
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(sqlite3.OperationalError) near "#establecemos": syntax error
-[SQL: #establecemos conexión con la base de datos SQLite.]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-</pre>
 </div>
 </div>
 </div>
@@ -7606,11 +7606,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#cargamos el conjunto de datos en formato csv limitando a 500k registros.</span>
-<span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"Inclusi_n_Financiera.csv"</span><span class="p">,</span><span class="n">nrows</span><span class="o">=</span><span class="mi">500000</span><span class="p">)</span>
+<span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"Inclusi_n_Financiera_20240917.csv"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7621,7 +7621,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#agregamos la data cargada a una tabla SQL en la base de datos "Inclusion_Financiera.db"</span>
@@ -7636,9 +7636,9 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>500000</pre>
+<pre>52700</pre>
 </div>
 </div>
 </div>
@@ -7648,7 +7648,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span>
@@ -7672,7 +7672,7 @@ Done.
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <table>
 <thead>
@@ -7783,30 +7783,131 @@ Done.
 <td>1</td>
 <td>7</td>
 <td>Bancolombia</td>
-<td>31/03/2021</td>
+<td>30/06/2024</td>
+<td>11</td>
+<td>CUNDINAMARCA</td>
+<td>736</td>
+<td>SESQUILE</td>
+<td>Microcredito</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
 <td>1</td>
-<td>ANTIOQUIA</td>
-<td>360</td>
-<td>ITAGUI</td>
-<td>Transacciones y tramites a traves de corresponsales fisicos</td>
+<td>6900000.0</td>
+<td>4</td>
+<td>45700000.0</td>
+<td>5</td>
+<td>52600000.0</td>
+<td>0</td>
+<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>530006</td>
-<td>239976153179.0</td>
-<td>245</td>
-<td>35760870.0</td>
-<td>86</td>
-<td>17815200</td>
-<td>312203</td>
-<td>165151860269.0</td>
-<td>627548</td>
-<td>231807968212.0</td>
-<td>25580</td>
-<td>13171765561</td>
-<td>1495668</td>
-<td>650161323291.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>26</td>
+<td>Tuya</td>
+<td>30/06/2024</td>
+<td>18</td>
+<td>NORTE DE SANTANDER</td>
+<td>347</td>
+<td>HERRAN</td>
+<td>Credito de consumo de bajo monto</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
@@ -7872,62 +7973,36 @@ Done.
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>1</td>
-<td>39</td>
-<td>Banco Davivienda</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>91</td>
-<td>BETANIA</td>
-<td>Corresponsales fisicos</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
+<td>51</td>
+<td>Credifinanciera S.A.</td>
+<td>30/06/2024</td>
+<td>9</td>
+<td>CESAR</td>
+<td>999</td>
+<td>TOTAL CESAR</td>
+<td>Microcredito</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -7955,18 +8030,6 @@ Done.
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -7975,262 +8038,72 @@ Done.
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>0.0</td>
 <td>0</td>
 <td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>20</td>
+<td>405651000.0</td>
+<td>18</td>
+<td>436500000.0</td>
+<td>38</td>
+<td>842151000.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td>1</td>
-<td>30</td>
-<td>Banco Caja Social S.A.</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>1</td>
-<td>MEDELLIN</td>
-<td>Microcredito por rango</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>49</td>
-<td>71710000.0</td>
-<td>78</td>
-<td>167350000.0</td>
-<td>71</td>
-<td>217800000.0</td>
-<td>250</td>
-<td>1454900000.0</td>
-<td>209</td>
-<td>2729615000.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>42</td>
-<td>Scotiabank Colpatria S.A.</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>154</td>
-<td>CAUCASIA</td>
-<td>Corresponsales fisicos</td>
-<td>0</td>
-<td>14</td>
-<td>14</td>
-<td>14</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>43</td>
-<td>Banagrario</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>649</td>
-<td>SAN CARLOS</td>
+<td>32</td>
+<td>5</td>
+<td>Confiar</td>
+<td>30/06/2024</td>
+<td>11</td>
+<td>CUNDINAMARCA</td>
+<td>793</td>
+<td>TAUSA</td>
 <td>Credito de consumo</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>6</td>
-<td>151000000.0</td>
-<td>1</td>
-<td>28000000.0</td>
-<td>7</td>
-<td>179000000.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -8258,6 +8131,32 @@ Done.
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
 <td>0.0</td>
 <td>0</td>
 <td>0.0</td>
@@ -8276,13 +8175,114 @@ Done.
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>32</td>
+<td>5</td>
+<td>Confiar</td>
+<td>30/06/2024</td>
+<td>24</td>
+<td>VALLE DEL CAUCA</td>
+<td>250</td>
+<td>EL DOVIO</td>
+<td>Microcredito</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
 <td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -8320,7 +8320,7 @@ Finalmente haremos describiremos los datos a partir de la estadísticas, resolve
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span>
@@ -8345,7 +8345,7 @@ Done.
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <table>
 <thead>
@@ -8453,85 +8453,20 @@ Done.
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>54</td>
-<td>Bancoomeva</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>360</td>
-<td>ITAGUI</td>
+<td>4</td>
+<td>128</td>
+<td>None</td>
+<td>30/06/2024</td>
+<td>18</td>
+<td>NORTE DE SANTANDER</td>
+<td>810</td>
+<td>TIBU</td>
 <td>Cuentas de Ahorro</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>2236</td>
-<td>141352079.48</td>
-<td>233</td>
-<td>374557521.5</td>
-<td>61</td>
-<td>211812931.31</td>
-<td>625</td>
-<td>2428415776.58</td>
-<td>1426</td>
-<td>2150158862.21</td>
-<td>1202</td>
-<td>1349938457.06</td>
-<td>2660</td>
-<td>3547617161.18</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -8545,56 +8480,20 @@ Done.
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
+<td>71</td>
+<td>4349029.76</td>
 <td>1</td>
-<td>7</td>
-<td>Bancolombia</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>376</td>
-<td>LA CEJA</td>
-<td>Cuentas de Ahorro</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>3028335.67</td>
 <td>0</td>
 <td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>26002</td>
-<td>3644560391.54</td>
-<td>3839</td>
-<td>6039688937.45</td>
-<td>1244</td>
-<td>4376556344.85</td>
-<td>27772</td>
-<td>102164278510.6</td>
-<td>14871</td>
-<td>27960129223.68</td>
-<td>18659</td>
-<td>47867406926.31</td>
-<td>34417</td>
-<td>104295706327.25</td>
+<td>73</td>
+<td>15390020.59</td>
+<td>33</td>
+<td>2648011.93</td>
+<td>40</td>
+<td>12742008.66</td>
+<td>73</td>
+<td>15390020.59</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
@@ -8646,62 +8545,6 @@ Done.
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>39</td>
-<td>Banco Davivienda</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>642</td>
-<td>SALGAR</td>
-<td>Cuentas de Ahorro</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>1660</td>
-<td>113547167.0</td>
-<td>184</td>
-<td>308194060.0</td>
-<td>92</td>
-<td>321784133.0</td>
-<td>1252</td>
-<td>10631573839.0</td>
-<td>935</td>
-<td>2207469139.0</td>
-<td>1245</td>
-<td>4959635767.0</td>
-<td>2257</td>
-<td>10980853157.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -8709,112 +8552,61 @@ Done.
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
 </tr>
 <tr>
 <td>1</td>
 <td>1</td>
 <td>Banco de Bogotá</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>664</td>
-<td>SAN PEDRO</td>
+<td>30/06/2024</td>
+<td>9</td>
+<td>CESAR</td>
+<td>400</td>
+<td>LA JAGUA DE IBIRICO</td>
 <td>Cuentas de Ahorro</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>1219</td>
-<td>110708681.0</td>
-<td>104</td>
-<td>165390745.0</td>
-<td>28</td>
-<td>98908880.0</td>
-<td>1273</td>
-<td>1494615377.0</td>
-<td>992</td>
-<td>575968288.0</td>
-<td>1620</td>
-<td>934855737.0</td>
-<td>2631</td>
-<td>1574667288.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>20378</td>
+<td>581457730.0</td>
+<td>442</td>
+<td>980258203.0</td>
+<td>135</td>
+<td>675927234.0</td>
+<td>5508</td>
+<td>7028820758.0</td>
+<td>6685</td>
+<td>2236527182.0</td>
+<td>14043</td>
+<td>3688156543.0</td>
+<td>21191</td>
+<td>7390983731.0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
 <td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
@@ -8836,17 +8628,9 @@ Done.
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
+<td>0.0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>0.0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
@@ -8854,68 +8638,76 @@ Done.
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>1</td>
-<td>43</td>
-<td>Banagrario</td>
-<td>31/03/2021</td>
-<td>1</td>
-<td>ANTIOQUIA</td>
-<td>809</td>
-<td>TITIRIBI</td>
+<td>7</td>
+<td>Bancolombia</td>
+<td>30/06/2024</td>
+<td>9</td>
+<td>CESAR</td>
+<td>45</td>
+<td>BECERRIL</td>
 <td>Cuentas de Ahorro</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0.0</td>
-<td>3092</td>
-<td>246382571.0</td>
-<td>223</td>
-<td>356449105.0</td>
-<td>74</td>
-<td>264118370.0</td>
-<td>1240</td>
-<td>5270441582.0</td>
-<td>1407</td>
-<td>1903499782.0</td>
-<td>2149</td>
-<td>2949056507.0</td>
-<td>3626</td>
-<td>5809599529.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4200</td>
+<td>467189764.66</td>
+<td>445</td>
+<td>1017858111.91</td>
+<td>165</td>
+<td>820587037.69</td>
+<td>4124</td>
+<td>13767769812.63</td>
+<td>1816</td>
+<td>2736836525.97</td>
+<td>3091</td>
+<td>5456181454.85</td>
+<td>5096</td>
+<td>13835710738.76</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
 <td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
@@ -8937,11 +8729,80 @@ Done.
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>7</td>
+<td>Bancolombia</td>
+<td>30/06/2024</td>
+<td>27</td>
+<td>PUTUMAYO</td>
+<td>569</td>
+<td>PUERTO CAICEDO</td>
+<td>Cuentas de Ahorro</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>86</td>
+<td>6880562.49</td>
+<td>1</td>
+<td>2637952.69</td>
+<td>0</td>
+<td>0.0</td>
+<td>76</td>
+<td>9431593.91</td>
+<td>54</td>
+<td>8013354.52</td>
+<td>33</td>
+<td>1505160.66</td>
+<td>87</td>
+<td>9518515.18</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -8951,11 +8812,150 @@ Done.
 <td>0</td>
 <td>0.0</td>
 <td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>65</td>
+<td>Lulo Bank</td>
+<td>30/06/2024</td>
+<td>21</td>
+<td>SANTANDER</td>
+<td>549</td>
+<td>PINCHOTE</td>
+<td>Cuentas de Ahorro</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+<td>36267.56</td>
+<td>1</td>
+<td>2061977.26</td>
+<td>0</td>
+<td>0.0</td>
+<td>14</td>
+<td>12788019.96</td>
+<td>6</td>
+<td>10690879.14</td>
+<td>8</td>
+<td>2097140.82</td>
+<td>14</td>
+<td>12788019.96</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -8994,11 +8994,11 @@ Done.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span>
-<span class="n">result_set</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="ss">"NOMBRE_ENTIDAD"</span><span class="p">,</span><span class="ss">"DESCRIP_UC"</span><span class="p">,</span><span class="ss">"FECHA_CORTE"</span><span class="p">,</span><span class="ss">"TIPO"</span><span class="p">,</span><span class="w"> </span>
+<span class="n">result_set</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="ss">"CODIGO_ENTIDAD"</span><span class="p">,</span><span class="ss">"NOMBRE_ENTIDAD"</span><span class="p">,</span><span class="ss">"DESCRIP_UC"</span><span class="p">,</span><span class="ss">"DESC_RENGLON"</span><span class="p">,</span><span class="ss">"FECHA_CORTE"</span><span class="p">,</span><span class="ss">"TIPO"</span><span class="p">,</span><span class="w"> </span>
 <span class="ss">"(19) NRO_CTAS_AHORRO_HASTA_1SMMLV"</span><span class="p">,</span>
 <span class="ss">"(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV"</span><span class="p">,</span>
 <span class="ss">"(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV"</span><span class="p">,</span>
@@ -9037,7 +9037,7 @@ Returning data to local variable result_set
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#en la celda anterior recuperamos las variables con relevancias para el tipo de producto "Cuentas de Ahorro".</span>
@@ -9056,7 +9056,7 @@ Returning data to local variable result_set
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9076,8 +9076,10 @@ Returning data to local variable result_set
 <thead>
 <tr style="text-align: right;">
 <th></th>
+<th>CODIGO_ENTIDAD</th>
 <th>NOMBRE_ENTIDAD</th>
 <th>DESCRIP_UC</th>
+<th>DESC_RENGLON</th>
 <th>FECHA_CORTE</th>
 <th>TIPO</th>
 <th>(19) NRO_CTAS_AHORRO_HASTA_1SMMLV</th>
@@ -9099,108 +9101,118 @@ Returning data to local variable result_set
 <tbody>
 <tr>
 <th>0</th>
-<td>Bancoomeva</td>
-<td>ANTIOQUIA</td>
-<td>31/03/2021</td>
+<td>128</td>
+<td>None</td>
+<td>NORTE DE SANTANDER</td>
+<td>TIBU</td>
+<td>30/06/2024</td>
 <td>Cuentas de Ahorro</td>
-<td>2236</td>
-<td>141352079.48</td>
-<td>233</td>
-<td>374557521.50</td>
-<td>61</td>
-<td>211812931.31</td>
-<td>625</td>
-<td>2428415776.58</td>
-<td>1426</td>
-<td>2150158862.21</td>
-<td>1202</td>
-<td>1349938457.06</td>
-<td>2660</td>
-<td>3547617161.18</td>
+<td>71</td>
+<td>4349029.76</td>
+<td>1</td>
+<td>3028335.67</td>
+<td>0</td>
+<td>0.00</td>
+<td>73</td>
+<td>15390020.59</td>
+<td>33</td>
+<td>2648011.93</td>
+<td>40</td>
+<td>12742008.66</td>
+<td>73</td>
+<td>15390020.59</td>
 </tr>
 <tr>
 <th>1</th>
-<td>Bancolombia</td>
-<td>ANTIOQUIA</td>
-<td>31/03/2021</td>
+<td>1</td>
+<td>Banco de Bogotá</td>
+<td>CESAR</td>
+<td>LA JAGUA DE IBIRICO</td>
+<td>30/06/2024</td>
 <td>Cuentas de Ahorro</td>
-<td>26002</td>
-<td>3644560391.54</td>
-<td>3839</td>
-<td>6039688937.45</td>
-<td>1244</td>
-<td>4376556344.85</td>
-<td>27772</td>
-<td>102164278510.60</td>
-<td>14871</td>
-<td>27960129223.68</td>
-<td>18659</td>
-<td>47867406926.31</td>
-<td>34417</td>
-<td>104295706327.25</td>
+<td>20378</td>
+<td>581457730.00</td>
+<td>442</td>
+<td>980258203.00</td>
+<td>135</td>
+<td>675927234.00</td>
+<td>5508</td>
+<td>7028820758.00</td>
+<td>6685</td>
+<td>2236527182.00</td>
+<td>14043</td>
+<td>3688156543.00</td>
+<td>21191</td>
+<td>7390983731.00</td>
 </tr>
 <tr>
 <th>2</th>
-<td>Banco Davivienda</td>
-<td>ANTIOQUIA</td>
-<td>31/03/2021</td>
+<td>7</td>
+<td>Bancolombia</td>
+<td>CESAR</td>
+<td>BECERRIL</td>
+<td>30/06/2024</td>
 <td>Cuentas de Ahorro</td>
-<td>1660</td>
-<td>113547167.00</td>
-<td>184</td>
-<td>308194060.00</td>
-<td>92</td>
-<td>321784133.00</td>
-<td>1252</td>
-<td>10631573839.00</td>
-<td>935</td>
-<td>2207469139.00</td>
-<td>1245</td>
-<td>4959635767.00</td>
-<td>2257</td>
-<td>10980853157.00</td>
+<td>4200</td>
+<td>467189764.66</td>
+<td>445</td>
+<td>1017858111.91</td>
+<td>165</td>
+<td>820587037.69</td>
+<td>4124</td>
+<td>13767769812.63</td>
+<td>1816</td>
+<td>2736836525.97</td>
+<td>3091</td>
+<td>5456181454.85</td>
+<td>5096</td>
+<td>13835710738.76</td>
 </tr>
 <tr>
 <th>3</th>
-<td>Banco de Bogotá</td>
-<td>ANTIOQUIA</td>
-<td>31/03/2021</td>
+<td>7</td>
+<td>Bancolombia</td>
+<td>PUTUMAYO</td>
+<td>PUERTO CAICEDO</td>
+<td>30/06/2024</td>
 <td>Cuentas de Ahorro</td>
-<td>1219</td>
-<td>110708681.00</td>
-<td>104</td>
-<td>165390745.00</td>
-<td>28</td>
-<td>98908880.00</td>
-<td>1273</td>
-<td>1494615377.00</td>
-<td>992</td>
-<td>575968288.00</td>
-<td>1620</td>
-<td>934855737.00</td>
-<td>2631</td>
-<td>1574667288.00</td>
+<td>86</td>
+<td>6880562.49</td>
+<td>1</td>
+<td>2637952.69</td>
+<td>0</td>
+<td>0.00</td>
+<td>76</td>
+<td>9431593.91</td>
+<td>54</td>
+<td>8013354.52</td>
+<td>33</td>
+<td>1505160.66</td>
+<td>87</td>
+<td>9518515.18</td>
 </tr>
 <tr>
 <th>4</th>
-<td>Banagrario</td>
-<td>ANTIOQUIA</td>
-<td>31/03/2021</td>
+<td>65</td>
+<td>Lulo Bank</td>
+<td>SANTANDER</td>
+<td>PINCHOTE</td>
+<td>30/06/2024</td>
 <td>Cuentas de Ahorro</td>
-<td>3092</td>
-<td>246382571.00</td>
-<td>223</td>
-<td>356449105.00</td>
-<td>74</td>
-<td>264118370.00</td>
-<td>1240</td>
-<td>5270441582.00</td>
-<td>1407</td>
-<td>1903499782.00</td>
-<td>2149</td>
-<td>2949056507.00</td>
-<td>3626</td>
-<td>5809599529.00</td>
+<td>12</td>
+<td>36267.56</td>
+<td>1</td>
+<td>2061977.26</td>
+<td>0</td>
+<td>0.00</td>
+<td>14</td>
+<td>12788019.96</td>
+<td>6</td>
+<td>10690879.14</td>
+<td>8</td>
+<td>2097140.82</td>
+<td>14</td>
+<td>12788019.96</td>
 </tr>
 </tbody>
 </table>
@@ -9214,7 +9226,7 @@ Returning data to local variable result_set
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#visualizamos el tamaño de nuestro conjunto de datos definido para productos de tipo "Cuentas de Ahorro".</span>
@@ -9229,9 +9241,9 @@ Returning data to local variable result_set
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(29781, 18)</pre>
+<pre>(13833, 20)</pre>
 </div>
 </div>
 </div>
@@ -9241,7 +9253,7 @@ Returning data to local variable result_set
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#identificamos el tipo de datos que se asocia a cada atributo del dataset.</span>
@@ -9256,10 +9268,12 @@ Returning data to local variable result_set
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>NOMBRE_ENTIDAD                                  object
+<pre>CODIGO_ENTIDAD                                   int64
+NOMBRE_ENTIDAD                                  object
 DESCRIP_UC                                      object
+DESC_RENGLON                                    object
 FECHA_CORTE                                     object
 TIPO                                            object
 (19) NRO_CTAS_AHORRO_HASTA_1SMMLV                int64
@@ -9322,7 +9336,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#identificamos cuantos datos vacíos se presenta en cada uno de los atributos del dataset.</span>
@@ -9337,10 +9351,208 @@ dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[90]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>NOMBRE_ENTIDAD                                 0
+<pre>CODIGO_ENTIDAD                                    0
+NOMBRE_ENTIDAD                                 1236
+DESCRIP_UC                                        0
+DESC_RENGLON                                      0
+FECHA_CORTE                                       0
+TIPO                                              0
+(19) NRO_CTAS_AHORRO_HASTA_1SMMLV                 0
+(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV               0
+(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV         0
+(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV       0
+(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV          0
+(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV        0
+(25) NRO_CTAS_AHORRO_ACTIVAS                      0
+(26) SALDO_CTAS_AHORRO_ACTIVAS                    0
+(27) NRO_CTAS_AHORRO_MUJERES                      0
+(28) SALDO_CTAS_AHORRO_MUJERES                    0
+(29) NRO_CTAS_AHORRO_HOMBRES                      0
+(30) SALDO_CTAS_AHORRO_HOMBRES                    0
+(31) NRO_CTAS_AHORRO                              0
+(32) SALDO_CTAS_AHORRO                            0
+dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8e2b22b9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#identificamos los registros con valores vacíos en NOMBRE_ENTIDAD</span>
+<span class="n">data_vacia</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"NOMBRE_ENTIDAD"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+<span class="n">data_vacia</span><span class="p">[</span><span class="s2">"CODIGO_ENTIDAD"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>CODIGO_ENTIDAD
+128    1086
+67      144
+124       6
+Name: count, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5b659f2c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>VALORES VACÍOS:</strong> observamos que los valores vacíos del campo NOMBRE_ENTIDAD se relacionan con tres entidades bancarias identificadas con los códigos 128, 67 y 124. A raíz de esto identificamos si el nombre de la entidad aparece en los registros con el fin de mejorar la calidad de los datos en la dimensión de completitud.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=677bb78a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_128</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"CODIGO_ENTIDAD"</span><span class="p">]</span><span class="o">==</span><span class="mi">128</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">data_128</span><span class="p">[</span><span class="s2">"NOMBRE_ENTIDAD"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Series([], Name: count, dtype: int64)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ac829125">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_67</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"CODIGO_ENTIDAD"</span><span class="p">]</span><span class="o">==</span><span class="mi">67</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">data_67</span><span class="p">[</span><span class="s2">"NOMBRE_ENTIDAD"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Series([], Name: count, dtype: int64)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7b5142f1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_124</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"CODIGO_ENTIDAD"</span><span class="p">]</span><span class="o">==</span><span class="mi">124</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">data_124</span><span class="p">[</span><span class="s2">"NOMBRE_ENTIDAD"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Series([], Name: count, dtype: int64)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=30981c0b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Observamos que para cada uno de los registros que presentan un valor vacío en el campo NOMBRE_ENTIDAD, no hay un nombre de entidad bancaria asociado a su código de entidad, por lo cual no es posible realizar la asignación de los valores faltantes con técnicas de <em>imputación</em>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=57816d85">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Conclusión de calidad de los datos en la dimensión de completitud:</strong>
+podemos observar que el set de datos presenta valores vacíos o nulos en el campo de nombre_entidad, y que dentro del set de datos no hay manera de encontrar a qué entidades corresponden dichos registros debido a que el código de la entidad registrado no se asocia con ningún valor dentro del conjunto de datos, por ello, lo más recomendable en este caso es eliminar los registros que presentan valores faltantes.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f608f4b9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#eliminamos los registros vacíos del set de datos para el análisis al acceso a cuentas de ahorro.</span>
+<span class="n">data_CA</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1">#verificamos que ya no quedan registros vacíos.</span>
+<span class="n">data_CA</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>CODIGO_ENTIDAD                                 0
+NOMBRE_ENTIDAD                                 0
 DESCRIP_UC                                     0
+DESC_RENGLON                                   0
 FECHA_CORTE                                    0
 TIPO                                           0
 (19) NRO_CTAS_AHORRO_HASTA_1SMMLV              0
@@ -9363,18 +9575,6 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=57816d85">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Conclusión de calidad de los datos en la dimensión de completitud:</strong>
-podemos observar que el set de datos no presenta valores vacíos o nulos, por lo cual, en temas de completitud se cuenta con una buena calidad en el conjunto de datos para productos de Cuentas de Ahorro.</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e889f92c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9389,12 +9589,12 @@ podemos observar que el set de datos no presenta valores vacíos o nulos, por lo
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3ac58fc5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3657d47f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#empecemos revisando el tipo de datos de los atributos. </span>
@@ -9409,10 +9609,12 @@ podemos observar que el set de datos no presenta valores vacíos o nulos, por lo
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>NOMBRE_ENTIDAD                                  object
+<pre>CODIGO_ENTIDAD                                   int64
+NOMBRE_ENTIDAD                                  object
 DESCRIP_UC                                      object
+DESC_RENGLON                                    object
 FECHA_CORTE                                     object
 TIPO                                            object
 (19) NRO_CTAS_AHORRO_HASTA_1SMMLV                int64
@@ -9435,7 +9637,7 @@ dtype: object</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5704c7fe">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4c643cd1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9445,12 +9647,12 @@ dtype: object</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d44e08b5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d1f28423">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">##cambiamos el formato de la columna "FECHA_CORTE" a datetime.</span>
@@ -9467,7 +9669,7 @@ dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>FECHA_CORTE    datetime64[ns]
 dtype: object</pre>
@@ -9480,7 +9682,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#A simple vista no se observa que hayan problemas de calidad en los datos relacionados con la estandarización a parte del</span>
@@ -9506,95 +9708,161 @@ dtype: object</pre>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>                         NOMBRE_ENTIDAD  count
-0                               Confiar   6665
-1                            Banagrario   4762
-2                           Bancolombia   3104
-3                       Banco de Bogotá   1335
-4                      Banco Davivienda   1260
-5                         Bancamia S.A.   1179
-6                             Lulo Bank   1011
-7                         BBVA Colombia    930
-8                Banco Mundo Mujer S.A.    878
-9                          Banco W S.A.    794
-10                        Banco Popular    763
-11                         Mibanco S.A.    668
-12               Banco Caja Social S.A.    588
-13                   Banco de Occidente    570
-14                            AV Villas    552
-15                Giros y Finanzas C.F.    441
-16                           Bancoomeva    426
-17                            Crezcamos    398
-18            Scotiabank Colpatria S.A.    368
-19            Financiera Juriscoop C.F.    336
-20                  Banco GNB Sudameris    299
-21                 Banco Falabella S.A.    294
-22  Cooperativa Financiera de Antioquia    270
-23                                 Itau    263
-24                             Citibank    226
-25                 Banco Pichincha S.A.    220
-26                              Cotrafa    211
-27                Banco Serfinanza S.A.    168
-28           JFK Cooperativa Financiera    120
-29                             Coofinep    114
-30                          Coopcentral    114
-31                      Coltefinanciera    102
-32                            Finandina    102
-33                 Credifinanciera S.A.     68
-34                 Corficolombiana S.A.     66
-35                            IRIS C.F.     54
-36                          BNP Paribas     18
-37                         Credifamilia     18
-38                      Banco Santander     17
-39      Banco J.P: Morgan Colombia S.A.      9 
+0                             Lulo Bank   2220
+1                               Confiar   2106
+2                           Bancolombia   2008
+3                            Banagrario   1594
+4                       Banco de Bogotá    424
+5                      Banco Davivienda    418
+6                         Bancamia S.A.    406
+7                         BBVA Colombia    310
+8                Banco Mundo Mujer S.A.    306
+9                          Banco W S.A.    270
+10                        Banco Popular    251
+11                         Mibanco S.A.    230
+12                            Crezcamos    209
+13               Banco Caja Social S.A.    196
+14                   Banco de Occidente    190
+15                            AV Villas    182
+16                           Bancoomeva    140
+17            Financiera Juriscoop C.F.    136
+18            Scotiabank Colpatria S.A.    126
+19                 Banco Falabella S.A.     98
+20                  Banco GNB Sudameris     98
+21  Cooperativa Financiera de Antioquia     90
+22                             Citibank     75
+23                                 Itau     74
+24                              Cotrafa     72
+25                 Banco Pichincha S.A.     70
+26                Banco Serfinanza S.A.     56
+27                            Finandina     42
+28           JFK Cooperativa Financiera     40
+29                          Coopcentral     38
+30                      Coltefinanciera     34
+31                 Credifinanciera S.A.     26
+32                 Corficolombiana S.A.     22
+33                            IRIS C.F.     22
+34                      Banco Santander      6
+35                          BNP Paribas      6
+36                         Credifamilia      6 
 
                           DESCRIP_UC  count
-0                          ANTIOQUIA   3698
-1                       CUNDINAMARCA   2898
-2                             BOYACA   2180
-3                          SANTANDER   2101
-4                    VALLE DEL CAUCA   1752
-5                             NARIÑO   1314
-6                             TOLIMA   1280
-7                              HUILA   1043
-8                              CAUCA    960
-9                 NORTE DE SANTANDER    956
-10                            CALDAS    905
-11                           BOLIVAR    896
-12                              META    894
-13                           CORDOBA    877
-14                         ATLANTICO    798
-15                         MAGDALENA    778
-16                             CESAR    762
-17                         RISARALDA    678
-18                             SUCRE    660
-19                          CASANARE    570
-20                           QUINDIO    536
-21                        LA GUAJIRA    482
-22                            BOGOTA    464
-23                           CAQUETA    447
-24                             CHOCO    424
-25                          PUTUMAYO    356
-26                            ARAUCA    255
-27                    TOTAL NACIONAL    226
-28  SAN ANDRES,PROV Y SANTA CATALINA    150
-29                          GUAVIARE    116
-30                          AMAZONAS    108
-31                           VICHADA    107
-32                           GUAINIA     60
-33                            VAUPES     50 
+0                          ANTIOQUIA   1519
+1                       CUNDINAMARCA   1229
+2                             BOYACA   1037
+3                          SANTANDER    941
+4                    VALLE DEL CAUCA    674
+5                             NARIÑO    619
+6                             TOLIMA    544
+7                              HUILA    444
+8                              CAUCA    427
+9                 NORTE DE SANTANDER    427
+10                              META    380
+11                           BOLIVAR    379
+12                            CALDAS    357
+13                             CESAR    330
+14                         MAGDALENA    329
+15                           CORDOBA    329
+16                         ATLANTICO    294
+17                             SUCRE    286
+18                         RISARALDA    258
+19                          CASANARE    242
+20                             CHOCO    203
+21                           QUINDIO    202
+22                        LA GUAJIRA    195
+23                           CAQUETA    192
+24                          PUTUMAYO    162
+25                            BOGOTA    148
+26                            ARAUCA    106
+27                    TOTAL NACIONAL     74
+28                          AMAZONAS     60
+29  SAN ANDRES,PROV Y SANTA CATALINA     54
+30                          GUAVIARE     52
+31                           VICHADA     50
+32                            VAUPES     28
+33                           GUAINIA     26 
 
-  FECHA_CORTE  count
-0  30/06/2022   5660
-1  31/12/2021   5264
-2  31/03/2022   5226
-3  30/09/2021   4572
-4  30/06/2021   4542
-5  31/03/2021   4517 
+              DESC_RENGLON  count
+0           TOTAL NACIONAL     74
+1             TOTAL BOGOTÁ     74
+2     SANTAFE DE BOGOTA D.     74
+3          TOTAL ANTIOQUIA     66
+4                 MEDELLIN     64
+...                    ...    ...
+1054        PUERTO ALEGRÍA      2
+1055                TUTASA      2
+1056            EL ENCANTO      2
+1057              EL PIÑON      2
+1058                BOJAYA      1
+
+[1059 rows x 2 columns] 
 
                 TIPO  count
-0  Cuentas de Ahorro  29781 
+0  Cuentas de Ahorro  12597 
 
 </pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e07df0d7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Revisamos las categorías presentes en el atributo de fecha de corte.</span>
+<span class="n">data_CA</span><span class="p">[</span><span class="s2">"FECHA_CORTE"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>FECHA_CORTE</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>2024-06-30</td>
+<td>6299</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2024-03-31</td>
+<td>6298</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -9606,12 +9874,12 @@ dtype: object</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Conclusión de calidad de los datos en la dimensión de Estandarización:</strong> Podemos observar a través del conteo de categorías que no existen problemas de estandarización además del tipo de datos de las fechas de corte, y que los datos registrados en el conjunto de datos no pertenecen solo a una última fecha sino que pertecen a una fecha de corte entre el 2021 y el 2022. Es decir, que los registros para cada columna se repiten en función de las fechas de corte registradas, es decir que hay datos menos actualizados que otros puesto que no hay el mismo número de registros en cada fecha.</p>
+<p><strong>Conclusión de calidad de los datos en la dimensión de Estandarización:</strong> Podemos observar a través del conteo de categorías que no existen problemas de estandarización además del tipo de datos de las fechas de corte, y que los datos registrados en el conjunto de datos no pertenecen solo a una última fecha de corte del año 2024 sino que pertecen a fechas de corte realizadas en dos primeros trimestres del año. Es decir, que el registro de la información para cada columna se repite en función de las fechas de corte comtempladas.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=601e3b36">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f77fb29e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9625,52 +9893,22 @@ dtype: object</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f9620367">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=daf40a82">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>A partir del análisis de estandarización se encontró que en el conjunto de datos hay información duplicada no a nivel de consistencia de datos, sino a nivel de entrega de valor, dado que para cada entidad bancaria se presentan los mismos atributos con diferentes fechas de registro. Por ello, se eliminará la duplicidad en la entrega de valor, para trabajar solo con aquellos datos que nos proporcionen información respecto al estado financiero de los colombianos en la fecha más actualizada, la cuál corresponde al 30/06/2022.</p>
+<p>A partir del análisis de estandarización se encontró que en el conjunto de datos hay información duplicada no a nivel de consistencia de datos, sino a nivel de entrega de valor, dado que para cada entidad bancaria se presentan los mismos atributos con diferentes fechas de registro. Esto nos permitirá realizar un análisis de la inclusión financiera de los colombianos en el año 2024 para sus dos primeros trimetres, e identificar como ha cambiado el acceso a productos o servicios financieros por parte de los colombianos a lo largo del primeros seis meses del año.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=06bd164d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3cbf8b90">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#vamos a eliminar aquellos datos que tienen información para fechas diferentes al 30/06/2022</span>
-<span class="n">indices_fechas_dif</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"FECHA_CORTE"</span><span class="p">]</span><span class="o">!=</span><span class="s2">"30/06/2022"</span><span class="p">]</span><span class="o">.</span><span class="n">index</span> <span class="c1">#guardamos los index de los datos con fechas distintas</span>
-<span class="c1">#eliminamos las filas correspondientes a fevhas distintas al 30/06/2022</span>
-<span class="n">data_CA</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">indices_fechas_dif</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">data_CA</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[78]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(5660, 18)</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=108e425d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#vamos  a revisar si hay problemas de duplicidad total en los datos. </span>
@@ -9689,354 +9927,51 @@ dtype: object</pre>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Valores duplicados en el data set: 1482
+<pre>Valores duplicados en el data set: 0
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>NOMBRE_ENTIDAD                                 1482
-DESCRIP_UC                                     1482
-FECHA_CORTE                                    1482
-TIPO                                           1482
-(19) NRO_CTAS_AHORRO_HASTA_1SMMLV              1482
-(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV            1482
-(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV      1482
-(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV    1482
-(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV       1482
-(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV     1482
-(25) NRO_CTAS_AHORRO_ACTIVAS                   1482
-(26) SALDO_CTAS_AHORRO_ACTIVAS                 1482
-(27) NRO_CTAS_AHORRO_MUJERES                   1482
-(28) SALDO_CTAS_AHORRO_MUJERES                 1482
-(29) NRO_CTAS_AHORRO_HOMBRES                   1482
-(30) SALDO_CTAS_AHORRO_HOMBRES                 1482
-(31) NRO_CTAS_AHORRO                           1482
-(32) SALDO_CTAS_AHORRO                         1482
+<pre>CODIGO_ENTIDAD                                 0
+NOMBRE_ENTIDAD                                 0
+DESCRIP_UC                                     0
+DESC_RENGLON                                   0
+FECHA_CORTE                                    0
+TIPO                                           0
+(19) NRO_CTAS_AHORRO_HASTA_1SMMLV              0
+(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV            0
+(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV      0
+(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV    0
+(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV       0
+(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV     0
+(25) NRO_CTAS_AHORRO_ACTIVAS                   0
+(26) SALDO_CTAS_AHORRO_ACTIVAS                 0
+(27) NRO_CTAS_AHORRO_MUJERES                   0
+(28) SALDO_CTAS_AHORRO_MUJERES                 0
+(29) NRO_CTAS_AHORRO_HOMBRES                   0
+(30) SALDO_CTAS_AHORRO_HOMBRES                 0
+(31) NRO_CTAS_AHORRO                           0
+(32) SALDO_CTAS_AHORRO                         0
 dtype: int64</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=436dd680">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#revisemos los datos duplicados</span>
-<span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[84]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>NOMBRE_ENTIDAD</th>
-<th>DESCRIP_UC</th>
-<th>FECHA_CORTE</th>
-<th>TIPO</th>
-<th>(19) NRO_CTAS_AHORRO_HASTA_1SMMLV</th>
-<th>(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV</th>
-<th>(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
-<th>(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
-<th>(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
-<th>(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
-<th>(25) NRO_CTAS_AHORRO_ACTIVAS</th>
-<th>(26) SALDO_CTAS_AHORRO_ACTIVAS</th>
-<th>(27) NRO_CTAS_AHORRO_MUJERES</th>
-<th>(28) SALDO_CTAS_AHORRO_MUJERES</th>
-<th>(29) NRO_CTAS_AHORRO_HOMBRES</th>
-<th>(30) SALDO_CTAS_AHORRO_HOMBRES</th>
-<th>(31) NRO_CTAS_AHORRO</th>
-<th>(32) SALDO_CTAS_AHORRO</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>18937</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>18952</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>18959</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>18971</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>18981</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>18982</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>19041</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>19052</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>19088</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-<tr>
-<th>19107</th>
-<td>Lulo Bank</td>
-<td>ANTIOQUIA</td>
-<td>2022-06-30</td>
-<td>Cuentas de Ahorro</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-<td>0</td>
-<td>0.00</td>
-<td>1</td>
-<td>0.00</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1e1aa483">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=802f7ffc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Conclusión de calidad de los datos en la dimensión de duplicidad:</strong> Vemos que la duplicación de los datos sí se trata de una repetición total de valores en múltiples registros. Por lo tanto lo ideal es eliminar todos los registros duplicados con el fin de que los análisis estadísticos no se vean afectados.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=814501c3">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_CA</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">data_CA</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
+<p><strong>Conclusión de calidad de los datos en la dimensión de duplicidad:</strong> además de la duplicidad de los datos a nivel temporal, lo cual nos permitirá identificar como ha cambiado el acceso a productos o servicios financieros por parte de los colombianos a lo largo del primeros seis meses del año 2024, no se presentan problemas de duplicidad en los datos a nivel de su consistencia.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[88]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(4178, 18)</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3a13b0a3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=068d74a7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10049,15 +9984,15 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e59dc97d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8d27e379">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Revisamos de manera rápida las variables estadísticas de los atributos numéricos con el fin de determinar si hay inconsistencia.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Revisamos de manera rápida las variables estadísticas de los atributos numéricos para determinar si hay inconsistencia en estos.</span>
 <span class="n">data_CA</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -10069,7 +10004,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[89]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[101]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10089,6 +10024,7 @@ dtype: int64</pre>
 <thead>
 <tr style="text-align: right;">
 <th></th>
+<th>CODIGO_ENTIDAD</th>
 <th>FECHA_CORTE</th>
 <th>(19) NRO_CTAS_AHORRO_HASTA_1SMMLV</th>
 <th>(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV</th>
@@ -10109,43 +10045,46 @@ dtype: int64</pre>
 <tbody>
 <tr>
 <th>count</th>
-<td>4178</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
-<td>4178.00</td>
+<td>12597.00</td>
+<td>12597</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
+<td>12597.00</td>
 </tr>
 <tr>
 <th>mean</th>
-<td>2022-06-30 00:00:00</td>
-<td>31473.34</td>
-<td>1396292660.42</td>
-<td>1596.52</td>
-<td>2883000605.77</td>
-<td>548.46</td>
-<td>2076947981.53</td>
-<td>11594.92</td>
-<td>114110372292.97</td>
-<td>15923.60</td>
-<td>17185156264.48</td>
-<td>18543.73</td>
-<td>19666392745.80</td>
-<td>37674.90</td>
-<td>123034635150.41</td>
+<td>33.89</td>
+<td>2024-05-15 12:05:12.074303232</td>
+<td>32703.49</td>
+<td>2185213866.14</td>
+<td>1865.02</td>
+<td>4152780977.55</td>
+<td>646.79</td>
+<td>3094806180.17</td>
+<td>15205.11</td>
+<td>129216174475.60</td>
+<td>17047.61</td>
+<td>20509279336.04</td>
+<td>18892.47</td>
+<td>21731702163.57</td>
+<td>39504.41</td>
+<td>138417048244.48</td>
 </tr>
 <tr>
 <th>min</th>
-<td>2022-06-30 00:00:00</td>
+<td>1.00</td>
+<td>2024-03-31 00:00:00</td>
 <td>0.00</td>
 <td>0.00</td>
 <td>0.00</td>
@@ -10163,93 +10102,98 @@ dtype: int64</pre>
 </tr>
 <tr>
 <th>25%</th>
-<td>2022-06-30 00:00:00</td>
-<td>16.00</td>
-<td>1243570.33</td>
-<td>1.00</td>
-<td>1802183.20</td>
+<td>7.00</td>
+<td>2024-03-31 00:00:00</td>
+<td>8.00</td>
+<td>37510.64</td>
 <td>0.00</td>
 <td>0.00</td>
-<td>15.00</td>
-<td>5360407.16</td>
-<td>8.00</td>
-<td>2495886.44</td>
-<td>8.00</td>
-<td>2056976.79</td>
-<td>18.00</td>
-<td>7787209.16</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>5.00</td>
+<td>35970.56</td>
+<td>3.00</td>
+<td>1104.59</td>
+<td>4.00</td>
+<td>12826.40</td>
+<td>9.00</td>
+<td>167367.13</td>
 </tr>
 <tr>
 <th>50%</th>
-<td>2022-06-30 00:00:00</td>
-<td>3234.00</td>
-<td>154280228.67</td>
-<td>90.50</td>
-<td>158595553.06</td>
-<td>31.00</td>
-<td>119477882.75</td>
-<td>1001.00</td>
-<td>2224478331.00</td>
-<td>1533.00</td>
-<td>676188913.57</td>
-<td>1839.50</td>
-<td>790245361.23</td>
-<td>3555.00</td>
-<td>2679492069.48</td>
+<td>39.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>1047.00</td>
+<td>45820945.11</td>
+<td>15.00</td>
+<td>32479257.09</td>
+<td>4.00</td>
+<td>21652463.94</td>
+<td>288.00</td>
+<td>190069158.02</td>
+<td>497.00</td>
+<td>109741594.77</td>
+<td>603.00</td>
+<td>128727675.38</td>
+<td>1224.00</td>
+<td>357032127.42</td>
 </tr>
 <tr>
 <th>75%</th>
-<td>2022-06-30 00:00:00</td>
-<td>8871.00</td>
-<td>410492169.17</td>
-<td>352.00</td>
-<td>639436167.00</td>
-<td>124.00</td>
-<td>474240912.01</td>
-<td>2842.75</td>
-<td>10102081161.80</td>
-<td>4369.50</td>
-<td>2996829022.20</td>
-<td>5010.00</td>
-<td>4091681458.89</td>
-<td>9830.50</td>
-<td>11826797522.72</td>
+<td>60.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>7946.00</td>
+<td>411452441.01</td>
+<td>243.00</td>
+<td>544578803.90</td>
+<td>84.00</td>
+<td>416145950.00</td>
+<td>2364.00</td>
+<td>7774437931.00</td>
+<td>3931.00</td>
+<td>2266579333.00</td>
+<td>4479.00</td>
+<td>2717484961.00</td>
+<td>8810.00</td>
+<td>9393787769.00</td>
 </tr>
 <tr>
 <th>max</th>
-<td>2022-06-30 00:00:00</td>
-<td>8099756.00</td>
-<td>369733411837.59</td>
-<td>510026.00</td>
-<td>914756172757.11</td>
-<td>193961.00</td>
-<td>753165431668.95</td>
-<td>5001973.00</td>
-<td>42809550716460.70</td>
-<td>4380082.00</td>
-<td>7301115505937.23</td>
-<td>4741135.00</td>
-<td>7941078910786.21</td>
-<td>11437069.00</td>
-<td>44690068876611.30</td>
+<td>121.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>12083800.00</td>
+<td>1858966002444.87</td>
+<td>1702733.00</td>
+<td>3943698201186.35</td>
+<td>592444.00</td>
+<td>2979328112938.20</td>
+<td>12208070.00</td>
+<td>80986508273739.09</td>
+<td>7543762.00</td>
+<td>18288260378212.80</td>
+<td>7265545.00</td>
+<td>19268118404960.30</td>
+<td>15341107.00</td>
+<td>83864169279520.00</td>
 </tr>
 <tr>
 <th>std</th>
+<td>28.64</td>
 <td>NaN</td>
-<td>277564.29</td>
-<td>12320553406.18</td>
-<td>15435.48</td>
-<td>27825870677.08</td>
-<td>5316.89</td>
-<td>20424493546.90</td>
-<td>115118.07</td>
-<td>1253697708025.57</td>
-<td>141900.10</td>
-<td>190605242518.71</td>
-<td>163783.52</td>
-<td>202550513444.57</td>
-<td>338321.01</td>
-<td>1313422571484.39</td>
+<td>316376.60</td>
+<td>28803612695.70</td>
+<td>25136.61</td>
+<td>57209041470.56</td>
+<td>8770.40</td>
+<td>43419435832.41</td>
+<td>197863.62</td>
+<td>1619103002991.88</td>
+<td>170143.93</td>
+<td>286297808260.15</td>
+<td>184037.41</td>
+<td>297777372792.64</td>
+<td>390223.59</td>
+<td>1680185579631.56</td>
 </tr>
 </tbody>
 </table>
@@ -10259,29 +10203,1476 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dab18884">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e0ff9ec8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Conclusión de calidad de los datos en la dimensión de consistencia:</strong> de acuerdo con la revisión de los atributos numéricos, podemos concluir que no se presentan problemas de calidad en la dimensión de consistencia.</p>
+<p><strong>Conclusión de calidad de los datos en la dimensión de consistencia:</strong> de acuerdo con la revisión de los atributos numéricos, podemos concluir que no se presentan problemas de calidad en la dimensión de consistencia para los atributos numéricos.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0a52734f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#revisamos el taño del conjunto de datos luego del análisis de calidad de los datos</span>
+<span class="n">data_CA</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=194ec627">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[103]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(12597, 20)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d0b45d69">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Hasta el momento hemos visto que a partir de la selección de atributos y de la validación de la calidad de los datos pudimos no solo identificar los atributos relevantes para el análisis de acceso a cuentas de ahorro por parte de los colombianos sino también que logramos reducir el conjunto de datos solo a aquellos con buena calidad y con información de valor para el análisis de interés. El tamaño del conjunto de datos por medio de la selección de atributos se redujo de 500k registros a casi 30k, y luego este valor se redujo a 4178 registros gracias a la validación de la calidad de los datos, principalmente por medio de las dimensiones de estandarización y duplicidad en los datos.</p>
+<p><strong>Resultado de validación de calidad de los datos:</strong> visto que a partir de la selección de atributos y de la validación de la calidad de los datos pudimos no solo identificar los atributos relevantes para el análisis de acceso a cuentas de ahorro por parte de los colombianos sino también que logramos reducir el conjunto de datos solo a aquellos con buena calidad y con información relevante para el análisis de interés. El tamaño del conjunto de datos por medio de la selección de atributos para Cuentas de ahorro se redujo de 52.7k registros a 13.8k, y luego este valor se redujo a 12.6k registros gracias a la validación de la calidad de los datos, por medio de la dimensión de completitud.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3beb0f34">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4b5cbe0c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="2.3-An%C3%A1lisis-estad%C3%ADstico-univariado">2.3 Análisis estadístico univariado<a class="anchor-link" href="#2.3-An%C3%A1lisis-estad%C3%ADstico-univariado">¶</a></h2><h3 id="Objetivos">Objetivos<a class="anchor-link" href="#Objetivos">¶</a></h3><ol>
+<li>Determinar el comportamiento estadísticos de los datos numéricos del conjunto de datos para cuentas de ahorro.</li>
+<li>Identificar cuales son los bancos con un mayor número de clientes o mayor número de captación de cuentas de ahorro.</li>
+<li>Determinar las características principles de las cuentas de ahorro existentes en Colombia.</li>
+<li>Determinar la capacidad de acceso a cuentas de ahorro en términos de género.</li>
+<li>Establecer las principales brechas existentes en el acceso a cuentas de ahorro entre mujeres y hombres.</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5da5e5b0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#revisamos las principales variables estadísticas del conjunto de datos, tales como media, desviación estandar,</span>
+<span class="c1">#y percentiles del 25, 50 y 75% para el primer trimestre del año 2024.</span>
+<span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"FECHA_CORTE"</span><span class="p">]</span><span class="o">==</span><span class="s2">"2024-03-31"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[96]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>CODIGO_ENTIDAD</th>
+<th>FECHA_CORTE</th>
+<th>(19) NRO_CTAS_AHORRO_HASTA_1SMMLV</th>
+<th>(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV</th>
+<th>(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
+<th>(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
+<th>(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
+<th>(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
+<th>(25) NRO_CTAS_AHORRO_ACTIVAS</th>
+<th>(26) SALDO_CTAS_AHORRO_ACTIVAS</th>
+<th>(27) NRO_CTAS_AHORRO_MUJERES</th>
+<th>(28) SALDO_CTAS_AHORRO_MUJERES</th>
+<th>(29) NRO_CTAS_AHORRO_HOMBRES</th>
+<th>(30) SALDO_CTAS_AHORRO_HOMBRES</th>
+<th>(31) NRO_CTAS_AHORRO</th>
+<th>(32) SALDO_CTAS_AHORRO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>count</th>
+<td>6298.00</td>
+<td>6298</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+<td>6298.00</td>
+</tr>
+<tr>
+<th>mean</th>
+<td>33.85</td>
+<td>2024-03-31 00:00:00</td>
+<td>32892.29</td>
+<td>2189349590.83</td>
+<td>1669.69</td>
+<td>3676553264.16</td>
+<td>586.62</td>
+<td>2817074967.90</td>
+<td>15036.46</td>
+<td>124437847325.09</td>
+<td>16811.70</td>
+<td>19184172341.76</td>
+<td>18851.29</td>
+<td>20998250852.30</td>
+<td>39293.04</td>
+<td>135936051998.63</td>
+</tr>
+<tr>
+<th>min</th>
+<td>1.00</td>
+<td>2024-03-31 00:00:00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th>25%</th>
+<td>7.00</td>
+<td>2024-03-31 00:00:00</td>
+<td>8.00</td>
+<td>25254.88</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>3.00</td>
+<td>9464.80</td>
+<td>3.00</td>
+<td>5.26</td>
+<td>4.00</td>
+<td>6850.44</td>
+<td>8.00</td>
+<td>133844.20</td>
+</tr>
+<tr>
+<th>50%</th>
+<td>39.00</td>
+<td>2024-03-31 00:00:00</td>
+<td>1148.50</td>
+<td>47148497.89</td>
+<td>14.00</td>
+<td>32279341.51</td>
+<td>4.00</td>
+<td>21923991.04</td>
+<td>217.00</td>
+<td>135359906.59</td>
+<td>462.50</td>
+<td>107483576.15</td>
+<td>605.00</td>
+<td>119673119.97</td>
+<td>1216.50</td>
+<td>334573833.48</td>
+</tr>
+<tr>
+<th>75%</th>
+<td>60.00</td>
+<td>2024-03-31 00:00:00</td>
+<td>8009.00</td>
+<td>422842436.19</td>
+<td>219.00</td>
+<td>499344226.00</td>
+<td>79.00</td>
+<td>389826600.00</td>
+<td>2216.25</td>
+<td>6948859354.00</td>
+<td>3818.75</td>
+<td>2125373835.62</td>
+<td>4469.75</td>
+<td>2664504806.34</td>
+<td>8826.50</td>
+<td>8968992802.00</td>
+</tr>
+<tr>
+<th>max</th>
+<td>121.00</td>
+<td>2024-03-31 00:00:00</td>
+<td>12083800.00</td>
+<td>1772766464333.63</td>
+<td>1405462.00</td>
+<td>3224076259583.59</td>
+<td>489034.00</td>
+<td>2461610009127.91</td>
+<td>12032913.00</td>
+<td>78018677532352.00</td>
+<td>7417918.00</td>
+<td>16409284219396.80</td>
+<td>7163884.00</td>
+<td>17502441601156.90</td>
+<td>15101352.00</td>
+<td>80495297882927.20</td>
+</tr>
+<tr>
+<th>std</th>
+<td>28.63</td>
+<td>NaN</td>
+<td>317222.79</td>
+<td>28348515615.83</td>
+<td>22732.13</td>
+<td>51173459451.96</td>
+<td>7919.57</td>
+<td>39228002451.46</td>
+<td>196788.18</td>
+<td>1585963498879.04</td>
+<td>168823.45</td>
+<td>270676471817.57</td>
+<td>183011.43</td>
+<td>284204988426.92</td>
+<td>386806.50</td>
+<td>1647990090380.98</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d17b7fae">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#revisamos las principales variables estadísticas del conjunto de datos, tales como media, desviación estandar,</span>
+<span class="c1">#y percentiles del 25, 50 y 75% para el segundo trimestre del año 2024.</span>
+<span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"FECHA_CORTE"</span><span class="p">]</span><span class="o">==</span><span class="s2">"2024-06-30"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[97]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>CODIGO_ENTIDAD</th>
+<th>FECHA_CORTE</th>
+<th>(19) NRO_CTAS_AHORRO_HASTA_1SMMLV</th>
+<th>(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV</th>
+<th>(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
+<th>(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
+<th>(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
+<th>(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
+<th>(25) NRO_CTAS_AHORRO_ACTIVAS</th>
+<th>(26) SALDO_CTAS_AHORRO_ACTIVAS</th>
+<th>(27) NRO_CTAS_AHORRO_MUJERES</th>
+<th>(28) SALDO_CTAS_AHORRO_MUJERES</th>
+<th>(29) NRO_CTAS_AHORRO_HOMBRES</th>
+<th>(30) SALDO_CTAS_AHORRO_HOMBRES</th>
+<th>(31) NRO_CTAS_AHORRO</th>
+<th>(32) SALDO_CTAS_AHORRO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>count</th>
+<td>6299.00</td>
+<td>6299</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+<td>6299.00</td>
+</tr>
+<tr>
+<th>mean</th>
+<td>33.93</td>
+<td>2024-06-30 00:00:00</td>
+<td>32514.71</td>
+<td>2181078798.02</td>
+<td>2060.33</td>
+<td>4628933087.25</td>
+<td>706.96</td>
+<td>3372493301.12</td>
+<td>15373.73</td>
+<td>133993743041.07</td>
+<td>17283.48</td>
+<td>21834175962.48</td>
+<td>18933.65</td>
+<td>22465037035.52</td>
+<td>39715.75</td>
+<td>140897650618.88</td>
+</tr>
+<tr>
+<th>min</th>
+<td>1.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th>25%</th>
+<td>7.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>9.00</td>
+<td>45418.59</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>9.00</td>
+<td>102807.79</td>
+<td>4.00</td>
+<td>3220.09</td>
+<td>4.00</td>
+<td>19948.54</td>
+<td>9.00</td>
+<td>217742.65</td>
+</tr>
+<tr>
+<th>50%</th>
+<td>39.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>966.00</td>
+<td>45466931.58</td>
+<td>15.00</td>
+<td>32680058.53</td>
+<td>4.00</td>
+<td>21168731.00</td>
+<td>350.00</td>
+<td>263167597.21</td>
+<td>549.00</td>
+<td>115215313.62</td>
+<td>602.00</td>
+<td>134540457.83</td>
+<td>1233.00</td>
+<td>372778133.32</td>
+</tr>
+<tr>
+<th>75%</th>
+<td>60.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>7891.50</td>
+<td>404797863.84</td>
+<td>269.50</td>
+<td>602858778.76</td>
+<td>89.00</td>
+<td>441961778.50</td>
+<td>2514.50</td>
+<td>8767204637.50</td>
+<td>4029.50</td>
+<td>2422256519.95</td>
+<td>4490.00</td>
+<td>2797001812.38</td>
+<td>8803.50</td>
+<td>9968591053.50</td>
+</tr>
+<tr>
+<th>max</th>
+<td>121.00</td>
+<td>2024-06-30 00:00:00</td>
+<td>11791731.00</td>
+<td>1858966002444.87</td>
+<td>1702733.00</td>
+<td>3943698201186.35</td>
+<td>592444.00</td>
+<td>2979328112938.20</td>
+<td>12208070.00</td>
+<td>80986508273739.09</td>
+<td>7543762.00</td>
+<td>18288260378212.80</td>
+<td>7265545.00</td>
+<td>19268118404960.30</td>
+<td>15341107.00</td>
+<td>83864169279520.00</td>
+</tr>
+<tr>
+<th>std</th>
+<td>28.66</td>
+<td>NaN</td>
+<td>315553.34</td>
+<td>29253810674.34</td>
+<td>27330.47</td>
+<td>62665685604.84</td>
+<td>9545.83</td>
+<td>47241387786.02</td>
+<td>198948.57</td>
+<td>1651684765697.41</td>
+<td>171467.12</td>
+<td>301123295798.87</td>
+<td>185072.06</td>
+<td>310776449125.22</td>
+<td>393641.07</td>
+<td>1711897994592.12</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b0bcb6d4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A partir de esta primera descripción estadísticas de los datos podemos tener un acercamiento a la forma de distribución de los atributos. Al observar  el valor del percentil 50 y el valor máximo los atributos, nos damos cuenta que tanto el número de clientes por entidad bancaria como el saldo en las cuentas de ahorro presentan una asimetría positiva debido a que los datos se concentran en mayor cantidad hacia la izquierda con un sesgo a la derecha; observamos que el 75% de todos los registros en todos los atributos se ubican por debajo de la media lo que nos indica que, para los dos primeros trimestres del año 2024, la captación de clientes por parte de las surcursales de las entidades bancarias se concentra mayoritariamente en el 25% de dichas sucursales a nivel nacional.</p>
+<p>También podemos observar que para el segundo trimestre del año 2024 hay un aumento en el número total de cuentas bancarias por entidad, concentrandose dicho aumento solo en cuentas de ahorro con un saldo mayor a 1 SMMLV, pues para el segundo trimestre del año se observa una dismunición en el número de cuentas de ahorro con un saldo de hasta 1 SMMLV. En el caso del saldo total registrado en las cuentas de ahorro por entidad bancaria, se observa que el aumento se distruyó para todos los rangos de saldos definidos en las cuentas de ahorro.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=57dfc48a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Contexto:</strong> deseamos conocer como se distribuye a nivel nacional la captación de clientes por parte de las entidades bancarias, en este caso, analizaremos cuál es el porcentaje de clientes que tiene cada entidad bancaria y cuáles son aquellas preferidas por los colombianos a la fecha del año 2024, en sus dos primeros trimestres.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fe9807c2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_CA</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[81]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>CODIGO_ENTIDAD</th>
+<th>NOMBRE_ENTIDAD</th>
+<th>DESCRIP_UC</th>
+<th>DESC_RENGLON</th>
+<th>FECHA_CORTE</th>
+<th>TIPO</th>
+<th>(19) NRO_CTAS_AHORRO_HASTA_1SMMLV</th>
+<th>(20) SALDO_CTAS_AHORRO_HASTA_1SMMLV</th>
+<th>(21) NRO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
+<th>(22) SALDO_CTAS_AHORRO&gt;1SMMLV_HASTA _3SMMLV</th>
+<th>(23) NRO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
+<th>(24) SALDO_CTAS_AHORR&gt;3SMMLV_HASTA_ 5SMMLV</th>
+<th>(25) NRO_CTAS_AHORRO_ACTIVAS</th>
+<th>(26) SALDO_CTAS_AHORRO_ACTIVAS</th>
+<th>(27) NRO_CTAS_AHORRO_MUJERES</th>
+<th>(28) SALDO_CTAS_AHORRO_MUJERES</th>
+<th>(29) NRO_CTAS_AHORRO_HOMBRES</th>
+<th>(30) SALDO_CTAS_AHORRO_HOMBRES</th>
+<th>(31) NRO_CTAS_AHORRO</th>
+<th>(32) SALDO_CTAS_AHORRO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1</th>
+<td>1</td>
+<td>Banco de Bogotá</td>
+<td>CESAR</td>
+<td>LA JAGUA DE IBIRICO</td>
+<td>2024-06-30</td>
+<td>Cuentas de Ahorro</td>
+<td>20378</td>
+<td>581457730.00</td>
+<td>442</td>
+<td>980258203.00</td>
+<td>135</td>
+<td>675927234.00</td>
+<td>5508</td>
+<td>7028820758.00</td>
+<td>6685</td>
+<td>2236527182.00</td>
+<td>14043</td>
+<td>3688156543.00</td>
+<td>21191</td>
+<td>7390983731.00</td>
+</tr>
+<tr>
+<th>2</th>
+<td>7</td>
+<td>Bancolombia</td>
+<td>CESAR</td>
+<td>BECERRIL</td>
+<td>2024-06-30</td>
+<td>Cuentas de Ahorro</td>
+<td>4200</td>
+<td>467189764.66</td>
+<td>445</td>
+<td>1017858111.91</td>
+<td>165</td>
+<td>820587037.69</td>
+<td>4124</td>
+<td>13767769812.63</td>
+<td>1816</td>
+<td>2736836525.97</td>
+<td>3091</td>
+<td>5456181454.85</td>
+<td>5096</td>
+<td>13835710738.76</td>
+</tr>
+<tr>
+<th>3</th>
+<td>7</td>
+<td>Bancolombia</td>
+<td>PUTUMAYO</td>
+<td>PUERTO CAICEDO</td>
+<td>2024-06-30</td>
+<td>Cuentas de Ahorro</td>
+<td>86</td>
+<td>6880562.49</td>
+<td>1</td>
+<td>2637952.69</td>
+<td>0</td>
+<td>0.00</td>
+<td>76</td>
+<td>9431593.91</td>
+<td>54</td>
+<td>8013354.52</td>
+<td>33</td>
+<td>1505160.66</td>
+<td>87</td>
+<td>9518515.18</td>
+</tr>
+<tr>
+<th>4</th>
+<td>65</td>
+<td>Lulo Bank</td>
+<td>SANTANDER</td>
+<td>PINCHOTE</td>
+<td>2024-06-30</td>
+<td>Cuentas de Ahorro</td>
+<td>12</td>
+<td>36267.56</td>
+<td>1</td>
+<td>2061977.26</td>
+<td>0</td>
+<td>0.00</td>
+<td>14</td>
+<td>12788019.96</td>
+<td>6</td>
+<td>10690879.14</td>
+<td>8</td>
+<td>2097140.82</td>
+<td>14</td>
+<td>12788019.96</td>
+</tr>
+<tr>
+<th>5</th>
+<td>49</td>
+<td>AV Villas</td>
+<td>CAUCA</td>
+<td>TOTAL CAUCA</td>
+<td>2024-06-30</td>
+<td>Cuentas de Ahorro</td>
+<td>51647</td>
+<td>2020272197.35</td>
+<td>2928</td>
+<td>7037726474.01</td>
+<td>803</td>
+<td>3958315308.35</td>
+<td>10483</td>
+<td>77568381538.97</td>
+<td>25853</td>
+<td>22409730508.45</td>
+<td>29770</td>
+<td>21407108514.16</td>
+<td>56806</td>
+<td>86659505410.98</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12b765b7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Primer trimestre del año 2024</strong></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ebbdb0d3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Para conocer cuales son las entidades bancarias con un mayor número de clientes calcularemos la distribución de frecuencia</span>
+<span class="c1">#del antributo "NRO_CTAS_AHORRO" haciendo una agrupación por entidad bancaria de dicho atributo.</span>
+
+<span class="c1">#Calculamos la frecuencia absoluta de las distintas categorías.</span>
+<span class="n">nro_CA_x_entidad_1t</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"FECHA_CORTE"</span><span class="p">]</span><span class="o">==</span><span class="s2">"2024-03-31"</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"NOMBRE_ENTIDAD"</span><span class="p">])[</span>
+    <span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span> <span class="c1">#consideramos solo el primer trimestre</span>
+<span class="c1">#Calculamos la frecuencia relativa.</span>
+<span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s1">'hi %'</span><span class="p">]</span><span class="o">=</span><span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:((</span>
+    <span class="n">x</span><span class="o">/</span><span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1">#Calculamos ahora la frecuencia absoluta acumulada y relativa acumulada.</span>
+<span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s1">'Fi'</span><span class="p">]</span><span class="o">=</span><span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span> <span class="c1">#frecuencia absoluta acumulada.</span>
+<span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s1">'Hi %'</span><span class="p">]</span><span class="o">=</span><span class="n">nro_CA_x_entidad_1t</span><span class="p">[</span><span class="s2">"hi %"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#frecuencia relativa acumulada.</span>
+<span class="n">nro_CA_x_entidad_1t</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[120]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>NOMBRE_ENTIDAD</th>
+<th>(31) NRO_CTAS_AHORRO</th>
+<th>hi %</th>
+<th>Fi</th>
+<th>Hi %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Bancolombia</td>
+<td>45304056</td>
+<td>18.31</td>
+<td>45304056</td>
+<td>18.30</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Banco Caja Social S.A.</td>
+<td>38848932</td>
+<td>15.70</td>
+<td>84152988</td>
+<td>34.00</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Banco de Bogotá</td>
+<td>28592688</td>
+<td>11.55</td>
+<td>112745676</td>
+<td>45.60</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Banco Davivienda</td>
+<td>28566792</td>
+<td>11.54</td>
+<td>141312468</td>
+<td>57.10</td>
+</tr>
+<tr>
+<th>4</th>
+<td>BBVA Colombia</td>
+<td>25680411</td>
+<td>10.38</td>
+<td>166992879</td>
+<td>67.50</td>
+</tr>
+<tr>
+<th>5</th>
+<td>AV Villas</td>
+<td>17986947</td>
+<td>7.27</td>
+<td>184979826</td>
+<td>74.80</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Banagrario</td>
+<td>16023753</td>
+<td>6.48</td>
+<td>201003579</td>
+<td>81.20</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Scotiabank Colpatria S.A.</td>
+<td>9733656</td>
+<td>3.93</td>
+<td>210737235</td>
+<td>85.20</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Banco Falabella S.A.</td>
+<td>8077932</td>
+<td>3.26</td>
+<td>218815167</td>
+<td>88.40</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Banco Popular</td>
+<td>4921800</td>
+<td>1.99</td>
+<td>223736967</td>
+<td>90.40</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Bancamia S.A.</td>
+<td>4408983</td>
+<td>1.78</td>
+<td>228145950</td>
+<td>92.20</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Itau</td>
+<td>2717679</td>
+<td>1.10</td>
+<td>230863629</td>
+<td>93.30</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Banco W S.A.</td>
+<td>2649948</td>
+<td>1.07</td>
+<td>233513577</td>
+<td>94.40</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Mibanco S.A.</td>
+<td>2144571</td>
+<td>0.87</td>
+<td>235658148</td>
+<td>95.20</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Banco Mundo Mujer S.A.</td>
+<td>1654239</td>
+<td>0.67</td>
+<td>237312387</td>
+<td>95.90</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Banco de Occidente</td>
+<td>1636599</td>
+<td>0.66</td>
+<td>238948986</td>
+<td>96.60</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Bancoomeva</td>
+<td>1476258</td>
+<td>0.60</td>
+<td>240425244</td>
+<td>97.20</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Lulo Bank</td>
+<td>1246506</td>
+<td>0.50</td>
+<td>241671750</td>
+<td>97.70</td>
+</tr>
+<tr>
+<th>18</th>
+<td>Confiar</td>
+<td>1059141</td>
+<td>0.43</td>
+<td>242730891</td>
+<td>98.10</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Cotrafa</td>
+<td>966522</td>
+<td>0.39</td>
+<td>243697413</td>
+<td>98.50</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Banco Serfinanza S.A.</td>
+<td>873777</td>
+<td>0.35</td>
+<td>244571190</td>
+<td>98.80</td>
+</tr>
+<tr>
+<th>21</th>
+<td>Financiera Juriscoop C.F.</td>
+<td>653763</td>
+<td>0.26</td>
+<td>245224953</td>
+<td>99.10</td>
+</tr>
+<tr>
+<th>22</th>
+<td>JFK Cooperativa Financiera</td>
+<td>560604</td>
+<td>0.23</td>
+<td>245785557</td>
+<td>99.30</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Cooperativa Financiera de Antioquia</td>
+<td>530595</td>
+<td>0.21</td>
+<td>246316152</td>
+<td>99.50</td>
+</tr>
+<tr>
+<th>24</th>
+<td>Banco Pichincha S.A.</td>
+<td>390438</td>
+<td>0.16</td>
+<td>246706590</td>
+<td>99.70</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Banco GNB Sudameris</td>
+<td>376458</td>
+<td>0.15</td>
+<td>247083048</td>
+<td>99.80</td>
+</tr>
+<tr>
+<th>26</th>
+<td>Coopcentral</td>
+<td>145473</td>
+<td>0.06</td>
+<td>247228521</td>
+<td>99.90</td>
+</tr>
+<tr>
+<th>27</th>
+<td>Finandina</td>
+<td>140373</td>
+<td>0.06</td>
+<td>247368894</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>28</th>
+<td>Crezcamos</td>
+<td>35856</td>
+<td>0.01</td>
+<td>247404750</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>29</th>
+<td>Coltefinanciera</td>
+<td>33477</td>
+<td>0.01</td>
+<td>247438227</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>30</th>
+<td>Credifinanciera S.A.</td>
+<td>15528</td>
+<td>0.01</td>
+<td>247453755</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>31</th>
+<td>IRIS C.F.</td>
+<td>5967</td>
+<td>0.00</td>
+<td>247459722</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>32</th>
+<td>Corficolombiana S.A.</td>
+<td>2688</td>
+<td>0.00</td>
+<td>247462410</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>33</th>
+<td>Citibank</td>
+<td>1578</td>
+<td>0.00</td>
+<td>247463988</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>34</th>
+<td>Credifamilia</td>
+<td>1440</td>
+<td>0.00</td>
+<td>247465428</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>35</th>
+<td>Banco Santander</td>
+<td>1266</td>
+<td>0.00</td>
+<td>247466694</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>36</th>
+<td>BNP Paribas</td>
+<td>885</td>
+<td>0.00</td>
+<td>247467579</td>
+<td>100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=199c8e6f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Segundo trimestre del 2024</strong></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=00ee5a83">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Para conocer cuales son las entidades bancarias con un mayor número de clientes calcularemos la distribución de frecuencia</span>
+<span class="c1">#del antributo "NRO_CTAS_AHORRO" haciendo una agrupación por entidad bancaria de dicho atributo.</span>
+
+<span class="c1">#Calculamos la frecuencia absoluta de las distintas categorías.</span>
+<span class="n">nro_CA_x_entidad_2t</span><span class="o">=</span><span class="n">data_CA</span><span class="p">[</span><span class="n">data_CA</span><span class="p">[</span><span class="s2">"FECHA_CORTE"</span><span class="p">]</span><span class="o">==</span><span class="s2">"2024-06-30"</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"NOMBRE_ENTIDAD"</span><span class="p">])[</span>
+    <span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span> <span class="c1">#consideramos solo el segundo trimestre</span>
+<span class="c1">#Calculamos la frecuencia relativa.</span>
+<span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s1">'hi %'</span><span class="p">]</span><span class="o">=</span><span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:((</span>
+    <span class="n">x</span><span class="o">/</span><span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1">#Calculamos ahora la frecuencia absoluta acumulada y relativa acumulada.</span>
+<span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s1">'Fi'</span><span class="p">]</span><span class="o">=</span><span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s2">"(31) NRO_CTAS_AHORRO"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span> <span class="c1">#frecuencia absoluta acumulada.</span>
+<span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s1">'Hi %'</span><span class="p">]</span><span class="o">=</span><span class="n">nro_CA_x_entidad_2t</span><span class="p">[</span><span class="s2">"hi %"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#frecuencia relativa acumulada.</span>
+<span class="n">nro_CA_x_entidad_2t</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[121]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>NOMBRE_ENTIDAD</th>
+<th>(31) NRO_CTAS_AHORRO</th>
+<th>hi %</th>
+<th>Fi</th>
+<th>Hi %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Bancolombia</td>
+<td>46023321</td>
+<td>18.40</td>
+<td>46023321</td>
+<td>18.40</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Banco Caja Social S.A.</td>
+<td>39903147</td>
+<td>15.95</td>
+<td>85926468</td>
+<td>34.30</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Banco de Bogotá</td>
+<td>29025981</td>
+<td>11.60</td>
+<td>114952449</td>
+<td>45.90</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Banco Davivienda</td>
+<td>29025786</td>
+<td>11.60</td>
+<td>143978235</td>
+<td>57.60</td>
+</tr>
+<tr>
+<th>4</th>
+<td>BBVA Colombia</td>
+<td>25957236</td>
+<td>10.38</td>
+<td>169935471</td>
+<td>67.90</td>
+</tr>
+<tr>
+<th>5</th>
+<td>AV Villas</td>
+<td>18059943</td>
+<td>7.22</td>
+<td>187995414</td>
+<td>75.10</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Banagrario</td>
+<td>16209906</td>
+<td>6.48</td>
+<td>204205320</td>
+<td>81.60</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Scotiabank Colpatria S.A.</td>
+<td>9815949</td>
+<td>3.92</td>
+<td>214021269</td>
+<td>85.60</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Banco Falabella S.A.</td>
+<td>8299095</td>
+<td>3.32</td>
+<td>222320364</td>
+<td>88.90</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Banco Popular</td>
+<td>4981311</td>
+<td>1.99</td>
+<td>227301675</td>
+<td>90.90</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Bancamia S.A.</td>
+<td>4427625</td>
+<td>1.77</td>
+<td>231729300</td>
+<td>92.60</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Banco W S.A.</td>
+<td>2686971</td>
+<td>1.07</td>
+<td>234416271</td>
+<td>93.70</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Itau</td>
+<td>2010780</td>
+<td>0.80</td>
+<td>236427051</td>
+<td>94.50</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Banco Mundo Mujer S.A.</td>
+<td>1718172</td>
+<td>0.69</td>
+<td>238145223</td>
+<td>95.20</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Banco de Occidente</td>
+<td>1656318</td>
+<td>0.66</td>
+<td>239801541</td>
+<td>95.80</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Mibanco S.A.</td>
+<td>1581789</td>
+<td>0.63</td>
+<td>241383330</td>
+<td>96.50</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Bancoomeva</td>
+<td>1489668</td>
+<td>0.60</td>
+<td>242872998</td>
+<td>97.10</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Lulo Bank</td>
+<td>1331313</td>
+<td>0.53</td>
+<td>244204311</td>
+<td>97.60</td>
+</tr>
+<tr>
+<th>18</th>
+<td>Confiar</td>
+<td>1078173</td>
+<td>0.43</td>
+<td>245282484</td>
+<td>98.00</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Cotrafa</td>
+<td>977298</td>
+<td>0.39</td>
+<td>246259782</td>
+<td>98.40</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Banco Serfinanza S.A.</td>
+<td>896874</td>
+<td>0.36</td>
+<td>247156656</td>
+<td>98.80</td>
+</tr>
+<tr>
+<th>21</th>
+<td>Financiera Juriscoop C.F.</td>
+<td>693726</td>
+<td>0.28</td>
+<td>247850382</td>
+<td>99.10</td>
+</tr>
+<tr>
+<th>22</th>
+<td>JFK Cooperativa Financiera</td>
+<td>569478</td>
+<td>0.23</td>
+<td>248419860</td>
+<td>99.30</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Cooperativa Financiera de Antioquia</td>
+<td>534264</td>
+<td>0.21</td>
+<td>248954124</td>
+<td>99.50</td>
+</tr>
+<tr>
+<th>24</th>
+<td>Banco Pichincha S.A.</td>
+<td>438552</td>
+<td>0.18</td>
+<td>249392676</td>
+<td>99.70</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Banco GNB Sudameris</td>
+<td>373329</td>
+<td>0.15</td>
+<td>249766005</td>
+<td>99.80</td>
+</tr>
+<tr>
+<th>26</th>
+<td>Finandina</td>
+<td>150750</td>
+<td>0.06</td>
+<td>249916755</td>
+<td>99.90</td>
+</tr>
+<tr>
+<th>27</th>
+<td>Coopcentral</td>
+<td>148848</td>
+<td>0.06</td>
+<td>250065603</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>28</th>
+<td>Crezcamos</td>
+<td>38604</td>
+<td>0.02</td>
+<td>250104207</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>29</th>
+<td>Coltefinanciera</td>
+<td>34107</td>
+<td>0.01</td>
+<td>250138314</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>30</th>
+<td>Credifinanciera S.A.</td>
+<td>16143</td>
+<td>0.01</td>
+<td>250154457</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>31</th>
+<td>IRIS C.F.</td>
+<td>7068</td>
+<td>0.00</td>
+<td>250161525</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>32</th>
+<td>Corficolombiana S.A.</td>
+<td>2787</td>
+<td>0.00</td>
+<td>250164312</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>33</th>
+<td>Citibank</td>
+<td>1581</td>
+<td>0.00</td>
+<td>250165893</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>34</th>
+<td>Credifamilia</td>
+<td>1440</td>
+<td>0.00</td>
+<td>250167333</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>35</th>
+<td>Banco Santander</td>
+<td>1326</td>
+<td>0.00</td>
+<td>250168659</td>
+<td>100.00</td>
+</tr>
+<tr>
+<th>36</th>
+<td>BNP Paribas</td>
+<td>861</td>
+<td>0.00</td>
+<td>250169520</td>
+<td>100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2ac8b372">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Captación de clientes:</strong> observamos que la captación de clientesa nivel nacional se da mayoritariamente, más del 50% de clientes,en 4 entidades bancarias, siendo Bancolombia la entidad preferida por los colombianos con un porcentaje de 18.40% seguida por Banco Caja Social S.A con un 15.95%.</p>
+<p>Podemos observar también, que el 25% de todas las entidades bancarias a nivel nacional, 9 entidades bancarias, captan el 89% de todos los clientes en el país, lo que nos indica que, el 75% de todas las entidades bancarias solo captan un 11% de clientes entre sí. Las entidades menos representativas en el país corresponden a Banco Santander y BNP Paribas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26d39804">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
